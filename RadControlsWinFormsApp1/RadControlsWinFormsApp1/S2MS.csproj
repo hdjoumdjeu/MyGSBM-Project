@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6873D524-7939-433C-A581-8B903EAD6D77}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>S2MS</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="29Network_Connections.ico" />
+    <Content Include="Resources\0550ec6e4a7390696ace592e80ccb82b.png" />
+    <Content Include="Resources\20190611_165907.jpg" />
+    <Content Include="Resources\24.png" />
+    <Content Include="Resources\241.png" />
+    <Content Include="Resources\addedit.png" />
+    <Content Include="Resources\addusers.png" />
+    <Content Include="Resources\btEnregistrer32.png" />
+    <Content Include="Resources\btRepertoireA32.png" />
+    <Content Include="Resources\btSupprimer32.png" />
+    <Content Include="Resources\Cameroon_240-animated-flag-gifs.gif" />
+    <Content Include="Resources\Cameroon_240-animated-flag-gifs1.gif" />
+    <Content Include="Resources\Cameroun %281%29.gif" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\categories.png" />
+    <Content Include="Resources\client2a.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\Copy of stock_people.png" />
+    <Content Include="Resources\db3.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\Drapeau-Etats-Unis_240-gif.gif" />
+    <Content Include="Resources\frontpage.png" />
+    <Content Include="Resources\frontpage1.png" />
+    <Content Include="Resources\frontpage2.png" />
+    <Content Include="Resources\ico_formation.png" />
+    <Content Include="Resources\ico_print.png" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\images.png" />
+    <Content Include="Resources\images1.png" />
+    <Content Include="Resources\images_New1.png" />
+    <Content Include="Resources\images_New11.png" />
+    <Content Include="Resources\img7.jpg" />
+    <Content Include="Resources\img71.jpg" />
+    <Content Include="Resources\langmanager.png" />
+    <Content Include="Resources\lock_closed.png" />
+    <Content Include="Resources\SD.jpg" />
+    <Content Include="Resources\SD1.jpg" />
+    <Content Include="Resources\SD11.jpg" />
+    <Content Include="Resources\stock_new-meeting.png" />
+    <Content Include="Resources\student_icon-512.png" />
+    <Content Include="Resources\systeminfo.png" />
+    <Content Include="Resources\TITAN %284%29.jpg" />
+    <Content Include="Resources\unavailable.gif" />
+    <Content Include="Resources\webworld_f2.png" />
+    <Content Include="Resources\welcome-back-school-background_3589-817.jpg" />
+    <Content Include="Resources\WhatsApp Image 2021-03-19 at 21.19.26.jpeg" />
+    <Content Include="Resources\xfce-system-lock.png" />
+    <Content Include="Resources\ZOOMs-chalkboard.png" />
+    <Content Include="Resources\_.._telecharger__ressources_images_png_categories_actions_agt_business.png" />
+    <Content Include="Resources\_.._telecharger__ressources_images_png_categories_actions_easymoblog.png" />
+    <Content Include="Resources\_.._telecharger__ressources_images_png_categories_actions_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DataModel.cs" />
+    <Compile Include="EncryptDecrypt.cs" />
+    <Compile Include="FrmPlashScreem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlashScreem.Designer.cs">
+      <DependentUpon>FrmPlashScreem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Chartview.cs" />
+    <Compile Include="Frm_Chartview.Designer.cs">
+      <DependentUpon>Frm_Chartview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuApplication.Designer.cs">
+      <DependentUpon>Frm_MenuApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Authenification.cs" />
+    <Compile Include="F_Authenification.Designer.cs">
+      <DependentUpon>F_Authenification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Classes.cs" />
+    <Compile Include="F_Classes.Designer.cs">
+      <DependentUpon>F_Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Configuration.cs" />
+    <Compile Include="F_Configuration.Designer.cs">
+      <DependentUpon>F_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Ecole.cs" />
+    <Compile Include="F_Ecole.Designer.cs">
+      <DependentUpon>F_Ecole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Etudiants.cs" />
+    <Compile Include="F_Etudiants.Designer.cs">
+      <DependentUpon>F_Etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_EXERCICE.cs" />
+    <Compile Include="F_EXERCICE.Designer.cs">
+      <DependentUpon>F_EXERCICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Exercice1.cs" />
+    <Compile Include="F_Exercice1.Designer.cs">
+      <DependentUpon>F_Exercice1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Filiers.cs" />
+    <Compile Include="F_Filiers.Designer.cs">
+      <DependentUpon>F_Filiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MyCamera.cs" />
+    <Compile Include="F_MyCamera.Designer.cs">
+      <DependentUpon>F_MyCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Paiement.cs" />
+    <Compile Include="F_Paiement.Designer.cs">
+      <DependentUpon>F_Paiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Parents.cs" />
+    <Compile Include="F_Parents.Designer.cs">
+      <DependentUpon>F_Parents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Professeurs.cs" />
+    <Compile Include="F_Professeurs.Designer.cs">
+      <DependentUpon>F_Professeurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniFilePro.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmPlashScreem.resx">
+      <DependentUpon>FrmPlashScreem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Chartview.resx">
+      <DependentUpon>Frm_Chartview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MenuApplication.resx">
+      <DependentUpon>Frm_MenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Authenification.resx">
+      <DependentUpon>F_Authenification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Classes.resx">
+      <DependentUpon>F_Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Configuration.resx">
+      <DependentUpon>F_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Ecole.resx">
+      <DependentUpon>F_Ecole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Etudiants.resx">
+      <DependentUpon>F_Etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_EXERCICE.resx">
+      <DependentUpon>F_EXERCICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Exercice1.resx">
+      <DependentUpon>F_Exercice1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Filiers.resx">
+      <DependentUpon>F_Filiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MyCamera.resx">
+      <DependentUpon>F_MyCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Paiement.resx">
+      <DependentUpon>F_Paiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Parents.resx">
+      <DependentUpon>F_Parents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Professeurs.resx">
+      <DependentUpon>F_Professeurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

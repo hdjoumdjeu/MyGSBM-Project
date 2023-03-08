@@ -1,0 +1,5 @@
+C:\Users\Revolution Pro\Documents\HERMANN FOLDER\RadControlsWinFormsApp1\BLL\bin\Debug\BLL.dll
+C:\Users\Revolution Pro\Documents\HERMANN FOLDER\RadControlsWinFormsApp1\BLL\bin\Debug\BLL.pdb
+C:\Users\Revolution Pro\Documents\HERMANN FOLDER\RadControlsWinFormsApp1\BLL\obj\Debug\BLL.dll
+C:\Users\Revolution Pro\Documents\HERMANN FOLDER\RadControlsWinFormsApp1\BLL\obj\Debug\BLL.pdb
+C:\Users\Revolution Pro\Documents\HERMANN FOLDER\RadControlsWinFormsApp1\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B88FCC1F-79A2-4E70-B653-67FAA28D0DDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ALCHANYSCHOOL</RootNamespace>
+    <AssemblyName>ALCHANYSCHOOL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ALCHANYSCHOOL.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>29Network_Connections.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\..\Downloads\Webcam References\Webcam References\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\Downloads\Webcam References\Webcam References\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Downloads\Webcam References\Webcam References\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextBox, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.SpellChecker, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="zxing">
+      <HintPath>..\..\..\..\Downloads\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DataModel.cs" />
+    <Compile Include="EncryptDecrypt.cs" />
+    <Compile Include="FrmPlashScreem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlashScreem.Designer.cs">
+      <DependentUpon>FrmPlashScreem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Conf.Designer.cs">
+      <DependentUpon>Frm_Conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuApplication.Designer.cs">
+      <DependentUpon>Frm_MenuApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Process.Designer.cs">
+      <DependentUpon>Frm_Process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Classes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Classes.Designer.cs">
+      <DependentUpon>F_Classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Configuration.Designer.cs">
+      <DependentUpon>F_Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Exercice1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Exercice1.Designer.cs">
+      <DependentUpon>F_Exercice1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Etudiants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Etudiants.Designer.cs">
+      <DependentUpon>F_Etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MyCamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MyCamera.Designer.cs">
+      <DependentUpon>F_MyCamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Paiement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Paiement.Designer.cs">
+      <DependentUpon>F_Paiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Professeurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Professeurs.Designer.cs">
+      <DependentUpon>F_Professeurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Filiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Filiers.Designer.cs">
+      <DependentUpon>F_Filiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_USERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_USERS.Designer.cs">
+      <DependentUpon>F_USERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniFilePro.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="F_Authenification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Authenification.Designer.cs">
+      <DependentUpon>F_Authenification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Ecole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Ecole.Designer.cs">
+      <DependentUpon>F_Ecole.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlashScreem.resx">
+      <DependentUpon>FrmPlashScreem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Conf.resx">
+      <DependentUpon>Frm_Conf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MenuApplication.resx">
+      <DependentUpon>Frm_MenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Process.resx">
+      <DependentUpon>Frm_Process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Classes.resx">
+      <DependentUpon>F_Classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Configuration.resx">
+      <DependentUpon>F_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Exercice1.resx">
+      <DependentUpon>F_Exercice1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Etudiants.resx">
+      <DependentUpon>F_Etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MyCamera.resx">
+      <DependentUpon>F_MyCamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Paiement.resx">
+      <DependentUpon>F_Paiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Professeurs.resx">
+      <DependentUpon>F_Professeurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Filiers.resx">
+      <DependentUpon>F_Filiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_USERS.resx">
+      <DependentUpon>F_USERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="F_Authenification.resx">
+      <DependentUpon>F_Authenification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Ecole.resx">
+      <DependentUpon>F_Ecole.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZOOMs-chalkboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0550ec6e4a7390696ace592e80ccb82b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome-back-school-background_3589-817.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\webworld_f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\client2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\langmanager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_.._telecharger__ressources_images_png_categories_actions_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-03-19 at 21.19.26.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copy of stock_people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_.._telecharger__ressources_images_png_categories_actions_easymoblog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontpage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addusers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\systeminfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student_icon-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_formation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images_New1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cameroon_240-animated-flag-gifs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cameroun %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SD1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cameroon_240-animated-flag-gifs1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190611_165907.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITAN %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drapeau-Etats-Unis_240-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btRepertoireA32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images_New11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock_new-meeting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_.._telecharger__ressources_images_png_categories_actions_agt_business.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frontpage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="29Network_Connections.ico" />
+    <None Include="Resources\360_F.jpg" />
+    <None Include="Resources\background-images-for-login-form-8.jpg" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\School Bus Image .jpg" />
+    <None Include="Resources\istockphoto.jpg" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\db3.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\ico_print.png" />
+    <None Include="Resources\unavailable.gif" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\lock_closed.png" />
+    <None Include="Resources\btSupprimer32.png" />
+    <None Include="Resources\btEnregistrer32.png" />
+    <None Include="Resources\xfce-system-lock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
